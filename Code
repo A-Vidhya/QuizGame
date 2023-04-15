@@ -1,0 +1,188 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{   int a;
+	char topic,name[40];
+	printf("Welcome to QuizisGame\nPlay well and have fun\n\n");
+	printf("Enter your name:\n");
+	scanf("%s",name);
+	printf("\n\nEnter 1 to start game OR Enter 0 to quit the game:");
+	scanf("%d",&a);
+	if(a==0)
+	{
+		printf("Thank you");
+	}
+	if (a==1)
+	{
+	printf("\n\nTo choose the topic to play quiz click t:\n");
+	scanf("%s",&topic);
+	if(topic=='t'||'T')
+	{
+		printf("\nThe available topics are:\nClick 1 for-C program\nClick 2 for-Java Program\nClick 3 to Exit the game\n");
+	}
+    int choice;
+    char start;
+    printf("\nEnter the choice:");
+    scanf("%d",&choice);
+    char ans5,ans1,ans2,ans3,ans4,next;
+    int  an5,an1,an2,an3,an4;
+    int points=0;
+    switch(choice)
+    {
+    	case 1:
+    		 printf("\n\n!!You have now choosed to play quiz game on C language!!\n**Let us start the game**\n");
+    		 printf("\nClick s to start the game!\n");
+    		 scanf("%s",&start);
+    		 printf("\n\t>>Question 1:\n Who is the father of C language? \n\t\ta:Steve Jobs\t\tb:James Gosling \n\t\tc:Dennis Ritchie\td:Rasmus Lerdorf");
+    		 printf("\nEnter your option:");
+    		 scanf("%s",&ans1);
+    		 if(ans1=='c')
+    		 {
+    		 	printf("Bingo!!\n Its CORRECT\n You got 10 points");
+    		 	points+=10;
+			 }
+			 else
+			 {
+			 	printf("Incorrect answer");
+			 	printf("\n The correct answer is c option");
+			 	
+			 }
+			 printf("\n\t>>Question 2:\nAll keywords in C are in \n\t\ta:UpperCase letters\tb:LowerCase letters\n\t\tc:CamelCase letters\td:None of the mentioned");
+			 printf("\nEnter your option:");
+			 scanf("%s",&ans2);
+    		 if(ans2=='b')
+    		 {
+    		 	printf("Brilliant!!\n Its CORRECT\n You got 10 points");
+    		 	points+=10;
+			 }
+			 else
+			 {
+			 	printf("Incorrect answer");
+			 	printf("\n The correct answer is b option");
+			 }
+			 printf("\n\t>>Question 3:\nWhich of the following cannot be a variable name in C?\n\t\ta:volatile\tb:true\n\t\tc:friend\td:export");
+			 printf("\nEnter your option:");
+			 scanf("%s",&ans3);
+    		 if(ans3=='a')
+    		 {
+    		 	printf("Wow!!\n Its CORRECT\n You got 10 points");
+    		 	points+=10;
+			 }
+			 else
+			 {
+			 	printf("Incorrect answer");
+			 	printf("\n The correct answer is a option");
+			 }
+			 printf("\n\t>>Question 4:\n What is an example of iteration in C?\n\t\ta:for\t\tb:while\n\t\tc:do-while\td:All of the mentioned");
+			 printf("\nEnter your option:");
+			 scanf("%s",&ans4);
+    		 if(ans4=='d')
+    		 {
+    		 	printf("Mindblowing!!\n Its CORRECT\n You got 10 points");
+    		 	points+=10;
+			 }
+			 else
+			 {
+			 	printf("Incorrect answer");
+			 	printf("\n The correct answer is d option");
+			 }
+			 printf("\n\t>>Question 5:\n Functions in C Language are always?\n\t\ta:Internal\tb:External\n\t\tc:Both Internal and External\td: External and Internal are not valid terms for functions");
+			 printf("\nEnter your option:");
+			 scanf("%s",&ans5);
+    		 if(ans5=='b')
+    		 {
+    		 	printf("Amazing!! Its CORRECT\n You got 10 points");
+    		 	points+=10;
+			 }
+			 else
+			 {
+			 	printf("Incorrect answer");
+			 	printf("\n The correct answer is d option");
+			 
+			 }
+			 printf("\n\nThank you for taking this quiz!!We hope you had a great experience");
+			 printf("\nThe total score is %d\n",points);
+    		 break;
+    	case 2:
+			 printf("\n\n!!You have now choosed to play quiz game on Java language!!\n**Let us start the game**\n");
+			 printf("\nClick s to start the game!\n");
+    		 scanf("%s",&start);
+    		 printf("\n\t>>Question 1:\nWho invented Java Programming?\n\t\t1:Guido van Rossums\t2:James Gosling\n\t\t3:Dennis Ritchie\t4:Rasmus Lerdorf");
+    		 printf("\nEnter your option:");
+    		 scanf("%d",&an1);
+    		 if(an1==2)
+    		 {
+    		 	printf("Great!!\n Its CORRECT\n You got 10 points");
+    		 	points+=10;
+			 }
+			 else
+			 {
+			 	printf("Incorrect answer");
+			 	printf("\n The correct answer is 2nd option");
+			 } 
+    		 printf("\n\t>>Question 2:\nWhich component is used to compile, debug and execute the java programs?\n\t\t1:JRE\t2:JIT\n\t\t3:JDK\t4:JVM");
+    		 printf("\nEnter your option:");
+    		scanf("%d",&an2);
+    		 if(an2==3)
+    		 {
+    		 	printf("Great!!\n Its CORRECT\n You got 10 points");
+    		 	points+=10;
+			 }
+			 else
+			 {
+			 	printf("Incorrect answer");
+			 	printf("\n The correct answer is 3rd option");
+			 } 
+    		 
+			 printf("\n\t>>Question 3:\nWhich of the following is not an OOPS concept in Java?\n\t\t1:Compilation\t2:Polymorphism\n\t\t3:Inheritance\t\t4:Encapsulation");
+    		 printf("\nEnter your option:");
+    		 scanf("%d",&an3);
+    		 if(an3==1)
+    		 {
+    		 	printf("Congrats!!\n Its CORRECT\n You got 10 points");
+    		 	points+=10;
+			 }
+			 else
+			 {
+			 	printf("Incorrect answer");
+			 	printf("\n The correct answer is 1st option");
+			 } 
+			  printf("\n\t>>Question 4:\nWhat is Truncation in Java?\n\t\t1:Floating-point value assigned to a Floating type\t2:Floating-point value assigned to an integer type\n\t\t3:Char to integer\t4:None of these");
+    		 printf("\nEnter your option:");
+    		  scanf("%d",&an4);
+    		 if(an4==2)
+    		 {
+    		 	printf("Great!!\n Its CORRECT\n You got 10 points");
+    		 	points+=10;
+			 }
+			 else
+			 {
+			 	printf("Incorrect answer");
+			 	printf("\n The correct answer is 2nd option");
+			 } 
+			 printf("\n\t>>Question 5:\n Which of the following is a superclass of every class in Java?\n\t\t1:ArrayList\t2:Abstract class\n\t\t3:Class\t4:Object class");
+    		 printf("\nEnter your option:");
+    		 scanf("%d",&an5);
+    		 if(an5==4)
+    		 {
+    		 	printf("Great!!\n Its CORRECT\n You got 10 points");
+    		 	points+=10;
+			 }
+			 else
+			 {
+			 	printf("Incorrect answer");
+			 	printf("\n The correct answer is 4th option");
+			 } 
+			 
+			printf("\n\nThank you for taking this quiz!!We hope you had a great experience");
+			printf("\nThe total score u have earned is %d\n",points);
+		    break;
+		    case 3:
+		    	printf("Exit");
+		    	break;
+			default:
+				printf("Enter a Valid choice");
+			
+	}
+  }  
+}
